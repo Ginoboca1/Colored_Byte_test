@@ -30,7 +30,7 @@ body{
     overflow-x:hidden;
 }
 
-
+/*MOBILE*/
 
 .app{
     width:527px;
@@ -41,7 +41,7 @@ body{
     background-color: var(--Grey);
 }
 
-.nick-container{
+header{
     height:80px;
     display:flex;
     align-items:center;
@@ -78,11 +78,31 @@ body{
     border-radius: 50%;
 }
 
-.image-carousel{
+
+.carousel-container{
+    width: 525px;
+    height:325px;
+}
+
+.swiper{
+    width:100%;
+}
+
+.image__wrapper{
+    width:100%;
+    position:relative;
+}
+
+.image__wrapper img{
     width:525px;
     height:325px;
-    background-color:pink;
+    top:0;
+    left:0;
+    object-fit:cover;
+    object-position:center top;
 }
+
+
 
 .buttons-area{
     margin-top:15px;
@@ -100,15 +120,10 @@ body{
     cursor:pointer;
 }
 
-
-
 .button:hover{
     color:var(--Red);
     transition: 0.2s;
 }
-
-
-
 
 .text-area{
     height:80px;
@@ -120,21 +135,18 @@ body{
     gap:22px;
 }
 
-.text{
+.text-area p{
     width:477px;
     height:30px;
     font-size:12px;
-    font-weight:600;
     line-height:14.52px;
-}
-
-.text span{
-    font-weight:bold;
-}
-
-.text{
     width:472px;
     height:15px;
+    font-weight:500;
+}
+
+.text-area span{
+    font-weight:bold;
 }
 
 
@@ -162,7 +174,7 @@ body{
 }
 
 
-
+/*DESKTOP*/
 
 @media(min-width: 768px){
     .app{
@@ -170,7 +182,7 @@ body{
         margin: 150px 456px 129px 456px;
     }
     
-    .nick-container{
+    header{
         height:80px;
         display:flex;
         align-items:center;
@@ -206,10 +218,31 @@ body{
         height:12px;
     }
 
-    .image-carousel{
+    .carousel-container{
         width:525px;
         height:325px;
     }
+
+    .swiper {
+        width: 525px;
+        height: 325px;
+    }
+
+    .image__wrapper{
+        width:100%;
+        position:relative;
+    }
+
+    .image__wrapper img{
+        position:absolute;
+        width:100%;
+        top:0;
+        left:0;
+        object-fit:cover;
+        object-position:center top;
+    }
+
+    
     
     .buttons-area{
         margin-top:15px;

@@ -6,26 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <title>Colored Byte Test</title>
 </head>
-<body>
+<body onload = getImages()>
     <main class="app">
-        <div class="nick-container">
+        <header class="nick-container">
             <div class="image-container">
-                <img class="profile-pic" src="img/20200809_164000.jpg">
+                <img class="profile-pic" src="images/20200809_164000.jpg">
             </div>
 
             <div class="nick-text">
                 <p class="name"><span>Erik Dunlop</span></p>
                 <p class="ubication">San Francisco, California.</p>
             </div>
-        </div>
+        </header>
 
-        <div class="image-carousel">
-           
-        </div>
+        <article class="carousel-container">
+            <div class="swiper">
+                
+                <div class="swiper-wrapper">
+               
+                  <div class="swiper-slide">
+                    <div class="image__wrapper">
+                        <img id = 'img' alt="" src="">
+                    </div>
+                  </div>
 
-        <div class = "buttons-area">
+                  <div class="swiper-slide">
+                    <div class="image__wrapper">
+                        <img id = 'img'alt="" src="">
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="image__wrapper">
+                        <img id = 'img' alt="" src="">
+                    </div>
+                  </div>
+        
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </article>
+
+        <section class = "buttons-area">
             <div class="buttons">
 
                 <div class="button">
@@ -47,24 +75,21 @@
                 </div>
 
             </div>
-        </div>
+        </section>
 
-        <div class="text-area">
-            <div class="text">
-                <p><span>Lucas Credie</span> dolor sit amet, consectetur adipiscing elit. Mi enim ut eu cras ultrices eget et tristique proin. Mi enim ut eu cras ultrices eget et tristique proin.</p>
-            </div>
-            <div class="text">
-                <p><span>Comment</span> consectetur adipiscing elit. Mi enim ut eu cras ultrices eget et </p>
-            </div>
-        </div>
+        <section class="text-area">
+                <p><span>Eric</span> sit amet, consectetur adipiscing elit. Mi enim ut eu cras ultrices eget et tristique proin. Mi enim ut eu cras ultrices eget et tristique proin.</p>
+                <p><span>Comment</span> consectetur adipiscing elit. Mi enim ut eu cras ultrices eget et </p>  
+        </section>
 
-        <div class="form-area">
+        <section class="form-area">
            <p>consectetur adipiscing elit. Mi enim ut eu cras ultrices eget et</p>
            <p class="button">Post</p>
-        </div>
+        </section>
         
     </main>
 
-    <script src="scripts/carousel.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
