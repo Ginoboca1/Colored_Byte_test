@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62,5%;
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+    --MainFont:'Inter', sans-serif;
+    --Grey:#E5E5E5;
+    --Blue:#3D8AFF;
+    --SoftGrey:#F1F1F1;
+    --Red:#FF2C24;
+    --DarkBlue:#1941F8;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    overflow-x:hidden;
+}
+
+
+
+.app{
+    width:527px;
+    height:770px;
+    margin: 50% auto;
+    border: solid grey 1px;
+    border-radius:15px;
+    background-color: var(--Grey);
+}
+
+.nick-container{
+    height:80px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-left:25px;
+    margin-top: 15px;
+}
+
+.image-container{
+    width:50px;
+    height:50px;
+}
+
+
+.nick-text{
+    display:grid;
+    width:117px;
+    height:38px;
+}
+
+.nick-text span{
+    font-weight:bold;
+}
+
+.ubication{
+    font-size: 9px;
+    font-weight:bold;
+    width:117px;
+    height:12px;
+}
+
+.profile-pic{
+    width:50px;
+    border-radius: 50%;
+}
+
+.image-carousel{
+    width:525px;
+    height:325px;
+    background-color:pink;
+}
+
+.buttons-area{
+    margin-top:15px;
+    display:flex;
+    justify-content:left;
+}
+
+.buttons{
+    margin-left:25px;
+    display:flex;
+    width:92px;
+    height:25px;
+    gap:1rem;
+    font-size:20px;
+    cursor:pointer;
+}
+
+
+
+.button:hover{
+    color:var(--Red);
+    transition: 0.2s;
+}
+
+
+
+
+.text-area{
+    height:80px;
+    width:500px;
+    margin: 30px auto;
+    display: grid;
+    justify-content:center;
+    align-items:center;
+    gap:22px;
+}
+
+.text{
+    width:477px;
+    height:30px;
+    font-size:12px;
+    font-weight:600;
+    line-height:14.52px;
+}
+
+.text span{
+    font-weight:bold;
+}
+
+.text{
+    width:472px;
+    height:15px;
+}
+
+
+.form-area{
+    width:477px;
+    height:55px;
+    margin:120px 24px 24px 24px;
+    display:flex;
+    justify-content:center;
+    padding:20px 0;
+    gap:30px;
+    background-color:var(SoftGrey);
+    border-radius:5px;
+}
+
+.form-area p{
+    font-size:12px;
+    font-weight:bold;
+}
+
+.form-area .button{
+    color:var(--Blue);
+    cursor:pointer;
+    font-weight:bold;
+}
+
+
+
+
+@media(min-width: 768px){
+    .app{
+        width:527px;
+        margin: 150px 456px 129px 456px;
+    }
+    
+    .nick-container{
+        height:80px;
+        display:flex;
+        align-items:center;
+        gap:10px;
+        margin-left:25px;
+        margin-top: 15px;
+    }
+    
+    .image-container{
+        width:50px;
+        height:50px;
+    }
+
+    .profile-pic{
+        width:50px;
+        border-radius: 50%;
+    }
+    
+    
+    .nick-text{
+        display:grid;
+        width:117px;
+        height:38px;
+    }
+
+    .nick-text span{
+        font-weight:bold;
+    }
+
+    .ubication{
+        font-size: 9px;
+        width:117px;
+        height:12px;
+    }
+
+    .image-carousel{
+        width:525px;
+        height:325px;
+    }
+    
+    .buttons-area{
+        margin-top:15px;
+        display:flex;
+        justify-content:left;
+    }
+    
+    .buttons{
+        margin-left:25px;
+        display:flex;
+        width:92px;
+        height:25px;
+        font-size:20px;
+        font-weight:bold;
+    }
+
+    .text-area{
+        height:80px;
+        width:500px;
+        margin: 30px auto;
+        display: grid;
+        justify-content:center;
+        align-items:center;
+        gap:22px;
+    }
+
+    
+    .text{
+        width:477px;
+        height:30px;
+        font-size:12px;
+        font-weight:600;
+        line-height:14.52px;
+    }
+    
+    .form-area{
+        width:477px;
+        height:55px;
+        margin:120px 24px 24px 24px;
+        display:flex;
+        justify-content:center;
+        padding:20px 0;
+        gap:30px;
+        background-color: var(--SoftGrey);
+        border-radius:5px;
+    }
+
+    .form-area p{
+        font-size:12px;
+        font-weight:bold;
+    }
+
+    .form-area .button{
+        color:var(--Blue);
+        cursor:pointer;
+        font-weight:bold;
+    }
+
+    .form-area .button:hover{
+        color: var(--DarkBlue);
+    }
+}
