@@ -41,6 +41,8 @@ body{
     background-color: var(--Grey);
 }
 
+/*HEADER*/
+
 header{
     height:80px;
     display:flex;
@@ -78,6 +80,7 @@ header{
     border-radius: 50%;
 }
 
+/*IMAGES*/
 
 .carousel-container{
     width: 525px;
@@ -102,7 +105,7 @@ header{
     object-position:center top;
 }
 
-
+/*BUTTONS*/
 
 .buttons-area{
     margin-top:15px;
@@ -111,8 +114,8 @@ header{
 }
 
 .buttons{
-    margin-left:25px;
     display:flex;
+    margin-left:25px;
     width:92px;
     height:25px;
     gap:1rem;
@@ -125,6 +128,12 @@ header{
     transition: 0.2s;
 }
 
+
+.button-heart-active{
+    color:var(--Red);
+}
+
+/*DESCRIPTION & COMMENTS*/
 .text-area{
     height:80px;
     width:500px;
@@ -149,6 +158,8 @@ header{
     font-weight:bold;
 }
 
+
+/*POST VAR*/
 
 .form-area{
     width:477px;
@@ -201,7 +212,6 @@ header{
         border-radius: 50%;
     }
     
-    
     .nick-text{
         display:grid;
         width:117px;
@@ -217,6 +227,8 @@ header{
         width:117px;
         height:12px;
     }
+
+    /*IMAGES*/
 
     .carousel-container{
         width:525px;
@@ -242,7 +254,7 @@ header{
         object-position:center top;
     }
 
-    
+    /*BUTTONS*/
     
     .buttons-area{
         margin-top:15px;
@@ -253,11 +265,15 @@ header{
     .buttons{
         margin-left:25px;
         display:flex;
-        width:92px;
-        height:25px;
-        font-size:20px;
-        font-weight:bold;
     }
+
+    .button{
+        display:flex;
+        align-items:center;
+        text-align:center;
+    }
+
+    /*DESCRIPTION & COMMENTS*/
 
     .text-area{
         height:80px;
@@ -289,6 +305,8 @@ header{
         background-color: var(--SoftGrey);
         border-radius:5px;
     }
+
+    /*POST VAR*/
 
     .form-area p{
         font-size:12px;
