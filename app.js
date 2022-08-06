@@ -25,6 +25,9 @@ button.addEventListener("click", function () {
   }
 });
 
+
+
+
 /* problem with the location of the fetching images into the html*/
 
 const requestUrl = "https://picsum.photos/v2/list?page=2&limit=100";

@@ -165,27 +165,39 @@ header{
 
 /*POST VAR*/
 
-.form-area{
+.form{
     width:477px;
     height:55px;
     margin:120px 24px 24px 24px;
     display:flex;
-    justify-content:center;
-    padding:20px 0;
-    gap:30px;
+    justify-content:space-between;
     background-color: var(--SoftGrey);
     border-radius:5px;
+    padding: 0 20px;
 }
 
-.form-area p{
-    font-size:12px;
-    font-weight:bold;
+
+.form input{
+    width:100%;
+    background-color: var(--SoftGrey);
+    padding:20px 0;
+    gap:30px;
+    border-radius:5px;
+    border:none;
 }
 
-.form-area .button{
+.form input:focus{
+    outline:none;
+}
+
+.form button{
+    border :none;
     color:var(--Blue);
     cursor:pointer;
-    font-weight:bold;
+}
+
+.form button:hover{
+    color:var(--DarkBlue);
 }
 
 
@@ -312,19 +324,38 @@ header{
 
     /*POST VAR*/
 
-    .form-area p{
-        font-size:12px;
-        font-weight:bold;
+
+    .form{
+        width:477px;
+        height:55px;
+        margin:120px 24px 24px 24px;
+        display:flex;
+        justify-content:space-between;
+        background-color: var(--SoftGrey);
+        border-radius:5px;
+        padding: 0 20px;
     }
 
-    .form-area .button{
+    .form input{
+        background-color: var(--SoftGrey);
+        padding:20px 0;
+        gap:30px;
+        border-radius:5px;
+        border:none;
+    }
+
+    .form input:focus{
+        outline:none;
+    }
+
+    .form button{
+        border :none;
         color:var(--Blue);
         cursor:pointer;
-        font-weight:bold;
     }
 
-    .form-area .button:hover{
-        color: var(--DarkBlue);
+    .form button:hover{
+        color:var(--DarkBlue);
     }
 }
 
