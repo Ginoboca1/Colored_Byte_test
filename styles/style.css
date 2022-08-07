@@ -34,9 +34,9 @@ body{
 /*MOBILE*/
 
 .app{
-    width:527px;
+    width: 100%;
     height:770px;
-    margin: 50% auto;
+    margin:10% auto;
     border: solid var(--SoftGrey) .5px;
     border-radius:5px;
     background-color: var(--Grey);
@@ -61,9 +61,9 @@ header{
 
 
 .nick-text{
-    display:grid;
     width:117px;
     height:38px;
+    display:grid;
     line-height:12.1px;
 }
 
@@ -72,10 +72,10 @@ header{
 }
 
 .ubication{
-    font-size: 9px;
-    font-weight:bold;
     width:117px;
     height:12px;
+    font-size: 9px;
+    font-weight:bold;
 }
 
 .nick-pic{
@@ -86,7 +86,7 @@ header{
 /*IMAGES*/
 
 .carousel-container{
-    width: 525px;
+    width: 100%;
     height:325px;
 }
 
@@ -100,7 +100,7 @@ header{
 }
 
 .image__wrapper img{
-    width:525px;
+    width:100%;
     height:325px;
     top:0;
     left:0;
@@ -111,20 +111,19 @@ header{
 /*BUTTONS*/
 
 .buttons-area{
-    margin-top:15px;
     display:flex;
     justify-content:left;
+    margin-top:15px;
 }
 
 .buttons{
-    display:flex;
-    margin-left:25px;
     width:92px;
     height:25px;
-    gap:1rem;
+    display:flex;
+    margin-left:20px;
+    gap:0.9rem;
     font-size:20px;
     cursor:pointer;
-
 }
 
 .button:hover{
@@ -140,21 +139,18 @@ header{
 /*DESCRIPTION & COMMENTS*/
 .text-area{
     height:80px;
-    width:500px;
+    width:90%;
     margin: 30px auto;
-    display: grid;
-    justify-content:center;
-    align-items:center;
-    gap:22px;
+    display:flex;
+    flex-direction:column;
+    gap:50px;
 }
 
 .text-area p{
-    width:477px;
-    height:30px;
+    width:100%;
+    height:15px;
     font-size:12px;
     line-height:14.52px;
-    width:472px;
-    height:15px;
     font-weight:400;
 }
 
@@ -166,9 +162,9 @@ header{
 /*POST VAR*/
 
 .form{
-    width:477px;
+    width:90%;
     height:55px;
-    margin:120px 24px 24px 24px;
+    margin:120px auto;
     display:flex;
     justify-content:space-between;
     background-color: var(--SoftGrey);
@@ -178,7 +174,7 @@ header{
 
 
 .form input{
-    width:100%;
+    width:80%;
     background-color: var(--SoftGrey);
     padding:20px 0;
     gap:30px;
@@ -239,9 +235,9 @@ header{
     }
 
     .ubication{
-        font-size: 9px;
         width:117px;
         height:12px;
+        font-size: 9px;
     }
 
     /*IMAGES*/
@@ -262,8 +258,8 @@ header{
     }
 
     .image__wrapper img{
-        position:absolute;
         width:100%;
+        position:absolute;
         top:0;
         left:0;
         object-fit:cover;
@@ -295,6 +291,7 @@ header{
         height:80px;
         width:500px;
         margin: 30px auto;
+        margin-left:25px;
         display: grid;
         justify-content:center;
         align-items:center;
